@@ -9,7 +9,7 @@ from turtle import down
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from webdriver_manager.firefox import GeckoDriverManager
-import time,os,glob,logging,datetime
+import time,os,glob,logging,datetime,sys
 from datetime import date
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
@@ -114,7 +114,12 @@ def main():
             driver.refresh()
             WebDriverWait(driver,10).until(EC.element_to_be_clickable((By.XPATH,'/html/body/div[1]/section[8]/div/div[3]/div[2]/div/ul/li[2]/div[1]/a/span')))
             logging.info('Click on latest invoice ')
-            driver.find_element(By.XPATH,'/html/body/div[1]/section[8]/div/div[3]/div[2]/div/ul/li[2]/div[1]/a/span').click()  #latest invoice
+            if month == driver.find_element(By.XPATH,'/html/body/div[1]/section[8]/div/div[3]/div[2]/div/ul/li[2]/div[1]/a/span').text.split()[0]:
+                driver.find_element(By.XPATH,'/html/body/div[1]/section[8]/div/div[3]/div[2]/div/ul/li[2]/div[1]/a/span').click()  #latest invoice
+            else:
+                logging.info("Sending mail for JOB FAILED")
+                bu_alerts.send_mail(receiver_email = receiver_email,mail_subject ='JOB FAILED - {}'.format(job_name),mail_body = 'No new invoice found for {}'.format(month),attachment_location = logfile)
+                sys.exit()
         except:
             # driver.refresh()
             driver.get('https://coderbyte.com/dashboard/biourja-efzrr#settings-plan_and_billing')
@@ -131,11 +136,13 @@ def main():
         s = connect_to_sharepoint()
         file_upload_sp(s)
         logging.info("File is uploaded")
+        logging.info("Sending mail for JOB SUCCESS")
         bu_alerts.send_mail(receiver_email = receiver_email,mail_subject =f'JOB SUCCESS - {job_name}',mail_body = f'{job_name} completed successfully, Attached logs',attachment_location = logfile)
         
         
     except Exception as e:
         logging.exception(str(e))
+        logging.info("Sending mail for JOB FAILED")
         bu_alerts.send_mail(receiver_email = receiver_email,mail_subject ='JOB FAILED - {}'.format(job_name),mail_body = 'Error in main() details {}'.format(str(e)),attachment_location = logfile)
     # finally:
     #     driver.quit()
