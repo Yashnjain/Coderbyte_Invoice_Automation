@@ -1,30 +1,29 @@
-from cmath import log
-from configparser import SectionProxy
-from genericpath import exists
-from lib2to3.pgen2 import driver
-from logging import exception
 import logging
 from socket import timeout
 from turtle import down
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from webdriver_manager.firefox import GeckoDriverManager
+from selenium.webdriver.firefox.firefox_binary import FirefoxBinary
 import time,os,glob,logging,datetime,sys
+from selenium.webdriver.firefox.options import Options
 from datetime import date
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
-from bu_config import get_config, SharePoint
+from bu_config import get_config
 import bu_alerts
 import sharepy
 
 mydate = datetime.datetime.now()
 month = mydate.strftime("%b")
 year = datetime.date.today().year
+base_path = os.getcwd() + '\\'+'temp'
 
+options = Options()
 # Credentials --
 # USER = "pooja.upadhyay@biourja.com"
 # PASSWORD = "Indore@123"
-
+executable_path = os.getcwd()+"\\geckodriver_v0.30.exe"
 # logging 
 today_date=date.today()
 logfile =  os.getcwd() +'\\logs\\'+'coderbyte_logfile'+str(today_date)+'.txt'
@@ -32,12 +31,32 @@ logging.basicConfig(level=logging.INFO,filename=logfile,filemode='w',format='[li
 
 
 profile = webdriver.FirefoxProfile()
-profile.set_preference("browser.helperApps.neverAsk.saveToDisk","text/plain,application/pdf")
-profile.set_preference("browser.download.manager.showWhenStarting",False)
-profile.set_preference('browser.download.dir',os.getcwd() + '\\'+'temp')
-profile.set_preference("browser.download.folderList",2)
-profile.set_preference('pdfjs.disabled',True)
-driver = webdriver.Firefox(executable_path=GeckoDriverManager().install(),firefox_profile=profile)
+# profile.set_preference("browser.helperApps.neverAsk.saveToDisk","text/plain,application/pdf")
+# profile.set_preference("browser.download.manager.showWhenStarting",False)
+# profile.set_preference('browser.download.dir',os.getcwd() + '\\'+'temp')
+# profile.set_preference("browser.download.folderList",2)
+# profile.set_preference('pdfjs.disabled',True)
+# mime_types = ['text/plain', 'application/vnd.ms-excel', 'text/csv', 'application/csv', 'text/comma-separated-values',
+# 				  'application/download', 'application/octet-stream', 'binary/octet-stream', 'application/binary', 'application/x-unknown']
+mime_types = ['application/pdf', 'text/plain', 'application/vnd.ms-excel', 'text/csv', 'application/csv', 'text/comma-separated-values','application/x-pdf',
+            'application/download', 'application/octet-stream', 'binary/octet-stream', 'application/binary', 'application/x-unknown']
+profile.set_preference("browser.download.folderList", 2)
+profile.set_preference("browser.download.manager.showWhenStarting", False)
+profile.set_preference("browser.download.dir", base_path)
+profile.set_preference("browser.helperApps.neverAsk.saveToDisk",
+                ",".join(mime_types))
+profile.set_preference("browser.helperApps.neverAsk.openFile",",".join(mime_types))
+profile.set_preference("security.default_personal_cert", "Select Automatically")
+profile.set_preference("security.tls.version.min", 1)
+profile.accept_untrusted_certs = True
+
+binary = FirefoxBinary(r"C:\\Program Files\\Mozilla Firefox\\Firefox.exe")
+# binary = FirefoxBinary(r"C:\\Users\\chetan.surwade\\AppData\\Local\\Mozilla Firefox\\firefox.exe")
+driver = webdriver.Firefox(firefox_binary=binary, firefox_profile=profile,
+                            options=options, executable_path=executable_path, timeout=600)
+
+# driver = webdriver.Firefox(executable_path=GeckoDriverManager().install(),firefox_profile=profile)
+# driver = webdriver.Firefox(executable_path=executable_path,firefox_profile=profile, options=Options)
 
 # get credentials from bu_config
 credential_dict = get_config('CODER_BYTE_INVOICE_AUTOMATION','CODER_BYTE_INVOICE_AUTOMATION')
@@ -47,6 +66,8 @@ sp_username = credential_dict['USERNAME'].split(';')[1]
 sp_password =  credential_dict['PASSWORD'].split(';')[1]
 share_point_path = credential_dict['API_KEY']
 receiver_email = credential_dict['EMAIL_LIST']
+receiver_email1 = 'imam.khan@biourja.com'
+
 
 job_name = 'CODER_BYTE_INVOICE_AUTOMATION'
 
@@ -86,7 +107,7 @@ def download_wait(path_to_downloads= os.getcwd() + '\\temp'):
                 dl_wait = False
         seconds += 1
     time.sleep(seconds)
-    driver.quit()
+    
     return seconds
         
 def main():
@@ -112,18 +133,22 @@ def main():
             driver.get('https://coderbyte.com/dashboard/biourja-efzrr#settings-plan_and_billing')
             time.sleep(2)
             driver.refresh()
-            WebDriverWait(driver,30).until(EC.element_to_be_clickable((By.XPATH,'/html/body/div[1]/section[8]/div/div[3]/div[2]/div/ul/li[2]/div[1]/a/span')))
+            WebDriverWait(driver,90).until(EC.element_to_be_clickable((By.XPATH,'/html/body/div[1]/section[8]/div/div[3]/div[2]/div/ul/li[2]/div[1]/a/span')))
             
         except:
-            # driver.refresh()
-            driver.get('https://coderbyte.com/dashboard/biourja-efzrr#settings-plan_and_billing')
-            WebDriverWait(driver,30).until(EC.element_to_be_clickable((By.XPATH,'/html/body/div[1]/section[8]/div/div[3]/div[2]/div/ul/li[2]/div[1]/a/span')))
+            try:
+                # driver.refresh()
+                driver.get('https://coderbyte.com/dashboard/biourja-efzrr#settings-plan_and_billing')
+                WebDriverWait(driver,90).until(EC.element_to_be_clickable((By.XPATH,'/html/body/div[1]/section[8]/div/div[3]/div[2]/div/ul/li[2]/div[1]/a/span')))
+                time.sleep(120)
+            except Exception as e:
+                raise e
 
         if month == driver.find_element(By.XPATH,'/html/body/div[1]/section[8]/div/div[3]/div[2]/div/ul/li[2]/div[1]/a/span').text.split()[0]:
             driver.find_element(By.XPATH,'/html/body/div[1]/section[8]/div/div[3]/div[2]/div/ul/li[2]/div[1]/a/span').click()  #latest invoice
         else:
             logging.info("Sending mail for JOB FAILED")
-            bu_alerts.send_mail(receiver_email = receiver_email,mail_subject ='JOB FAILED - {}'.format(job_name),mail_body = 'No new invoice found for {}'.format(month),attachment_location = logfile)
+            bu_alerts.send_mail(receiver_email = receiver_email1,mail_subject ='JOB FAILED - {}'.format(job_name),mail_body = 'No new invoice found for {}'.format(month),attachment_location = logfile)
             sys.exit() 
             
         driver.switch_to.window(driver.window_handles[-1])
@@ -143,9 +168,9 @@ def main():
     except Exception as e:
         logging.exception(str(e))
         logging.info("Sending mail for JOB FAILED")
-        bu_alerts.send_mail(receiver_email = receiver_email,mail_subject ='JOB FAILED - {}'.format(job_name),mail_body = 'Error in main() details {}'.format(str(e)),attachment_location = logfile)
-    # finally:
-    #     driver.quit()
+        bu_alerts.send_mail(receiver_email = receiver_email1,mail_subject ='JOB FAILED - {}'.format(job_name),mail_body = 'Error in main() details {}'.format(str(e)),attachment_location = logfile)
+    finally:
+        driver.quit()
 
 if __name__=="__main__" :
     logging.info('Execution Started')
