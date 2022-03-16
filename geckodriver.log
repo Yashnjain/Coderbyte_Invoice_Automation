@@ -517,3 +517,49 @@ JavaScript error: https://static.hsappstatic.net/conversations-visitor-ui/static
 
 ###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Msg_DestroyBrowsingContextGroup) Channel closing: too late to send/recv, messages will be lost
 
+1645686604194	geckodriver	INFO	Listening on 127.0.0.1:64392
+1645686607227	mozrunner::runner	INFO	Running command: "C:\\\\Program Files\\\\Mozilla Firefox\\\\Firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\TEMP\\AppData\\Local\\Temp\\rust_mozprofilexWT4r2"
+1645686607913	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\TEMP\\AppData\\Local\\Temp\\rust_mozprofilexWT4r2\\search.json.mozlz4", (void 0)))
+1645686609400	Marionette	INFO	Listening on port 64402
+1645686609491	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://s3.amazonaws.com/coderbytejs/jquery-1.3.2.min.js, line 19: unreachable code after return statement
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://coderbyte.com"
+JavaScript warning: https://s3.amazonaws.com/coderbytejs/jquery-1.3.2.min.js, line 19: unreachable code after return statement
+JavaScript warning: https://s3.amazonaws.com/coderbytejs/jquery-1.3.2.min.js, line 19: unreachable code after return statement
+JavaScript error: https://app.hubspot.com/conversations-visitor/5988877/threads/utk/959ad81be92342a0a026db4a8f2e2688?uuid=b0caf28e2043431b9d4a72491c14ad69&mobile=false&mobileSafari=false&hideWelcomeMessage=false&hstc=112823387.d47b2a1477dc5c69439cc876d9408317.1645686615894.1645686615894.1645686615894.1&domain=coderbyte.com&inApp53=false&messagesUtk=959ad81be92342a0a026db4a8f2e2688&url=https%3A%2F%2Fcoderbyte.com%2Fdashboard%2Fbiourja-efzrr%23settings-plan_and_billing&inline=false&isFullscreen=false&globalCookieOptOut=null&isFirstVisitorSession=false&isAttachmentDisabled=false&enableWidgetCookieBanner=false&isInCMS=false&hubspotUtk=d47b2a1477dc5c69439cc876d9408317, line 143: ReferenceError: hns is not defined
+JavaScript error: https://app.hubspot.com/conversations-visitor/5988877/threads/utk/959ad81be92342a0a026db4a8f2e2688?uuid=b0caf28e2043431b9d4a72491c14ad69&mobile=false&mobileSafari=false&hideWelcomeMessage=false&hstc=112823387.d47b2a1477dc5c69439cc876d9408317.1645686615894.1645686615894.1645686615894.1&domain=coderbyte.com&inApp53=false&messagesUtk=959ad81be92342a0a026db4a8f2e2688&url=https%3A%2F%2Fcoderbyte.com%2Fdashboard%2Fbiourja-efzrr%23settings-plan_and_billing&inline=false&isFullscreen=false&globalCookieOptOut=null&isFirstVisitorSession=false&isAttachmentDisabled=false&enableWidgetCookieBanner=false&isInCMS=false&hubspotUtk=d47b2a1477dc5c69439cc876d9408317, line 157: ReferenceError: newrelic is not defined
+JavaScript error: https://app.hubspot.com/conversations-visitor/5988877/threads/utk/959ad81be92342a0a026db4a8f2e2688?uuid=b0caf28e2043431b9d4a72491c14ad69&mobile=false&mobileSafari=false&hideWelcomeMessage=false&hstc=112823387.d47b2a1477dc5c69439cc876d9408317.1645686615894.1645686615894.1645686615894.1&domain=coderbyte.com&inApp53=false&messagesUtk=959ad81be92342a0a026db4a8f2e2688&url=https%3A%2F%2Fcoderbyte.com%2Fdashboard%2Fbiourja-efzrr%23settings-plan_and_billing&inline=false&isFullscreen=false&globalCookieOptOut=null&isFirstVisitorSession=false&isAttachmentDisabled=false&enableWidgetCookieBanner=false&isInCMS=false&hubspotUtk=d47b2a1477dc5c69439cc876d9408317, line 186: TypeError: hubspot.require is not a function
+JavaScript error: https://app.hubspot.com/conversations-visitor/5988877/threads/utk/959ad81be92342a0a026db4a8f2e2688?uuid=b0caf28e2043431b9d4a72491c14ad69&mobile=false&mobileSafari=false&hideWelcomeMessage=false&hstc=112823387.d47b2a1477dc5c69439cc876d9408317.1645686615894.1645686615894.1645686615894.1&domain=coderbyte.com&inApp53=false&messagesUtk=959ad81be92342a0a026db4a8f2e2688&url=https%3A%2F%2Fcoderbyte.com%2Fdashboard%2Fbiourja-efzrr%23settings-plan_and_billing&inline=false&isFullscreen=false&globalCookieOptOut=null&isFirstVisitorSession=false&isAttachmentDisabled=false&enableWidgetCookieBanner=false&isInCMS=false&hubspotUtk=d47b2a1477dc5c69439cc876d9408317, line 191: TypeError: hubspot.require is not a function
+JavaScript error: https://static.hsappstatic.net/conversations-visitor-ui/static-1.12099/bundles/visitor.js, line 1: Error: dlb head-dlb/bundle.production.js not loaded
+1645686648738	Marionette	INFO	Stopped listening on port 64402
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Msg_DestroyBrowsingContextGroup) Channel closing: too late to send/recv, messages will be lost
+
+1647403207546	geckodriver	INFO	Listening on 127.0.0.1:52063
+1647403210554	mozrunner::runner	INFO	Running command: "C:\\\\Program Files\\\\Mozilla Firefox\\\\Firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\TEMP\\AppData\\Local\\Temp\\rust_mozprofileN7ma8N"
+1647403211211	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\TEMP\\AppData\\Local\\Temp\\rust_mozprofileN7ma8N\\search.json.mozlz4", (void 0)))
+1647403213240	Marionette	INFO	Listening on port 52079
+1647403213325	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://s3.amazonaws.com/coderbytejs/jquery-1.3.2.min.js, line 19: unreachable code after return statement
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://coderbyte.com"
+JavaScript warning: https://s3.amazonaws.com/coderbytejs/jquery-1.3.2.min.js, line 19: unreachable code after return statement
+JavaScript warning: https://s3.amazonaws.com/coderbytejs/jquery-1.3.2.min.js, line 19: unreachable code after return statement
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Msg_DiscardWindowContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Msg_DiscardWindowContext) Channel closing: too late to send/recv, messages will be lost
+
+JavaScript error: https://app.hubspot.com/conversations-visitor/5988877/threads/utk/411ede850c3d4d8886d6239095e989ba?uuid=1396ced9ff9f4d279b3c337cfecf267d&mobile=false&mobileSafari=false&hideWelcomeMessage=false&hstc=112823387.cb699e9312d852c242bc02253ccc13cd.1647403220738.1647403220738.1647403220738.1&domain=coderbyte.com&inApp53=false&messagesUtk=411ede850c3d4d8886d6239095e989ba&url=https%3A%2F%2Fcoderbyte.com%2Fdashboard%2Fbiourja-efzrr%23settings-plan_and_billing&inline=false&isFullscreen=false&globalCookieOptOut=null&isFirstVisitorSession=false&isAttachmentDisabled=false&enableWidgetCookieBanner=false&isInCMS=false&hubspotUtk=cb699e9312d852c242bc02253ccc13cd, line 143: ReferenceError: hns is not defined
+JavaScript error: https://app.hubspot.com/conversations-visitor/5988877/threads/utk/411ede850c3d4d8886d6239095e989ba?uuid=1396ced9ff9f4d279b3c337cfecf267d&mobile=false&mobileSafari=false&hideWelcomeMessage=false&hstc=112823387.cb699e9312d852c242bc02253ccc13cd.1647403220738.1647403220738.1647403220738.1&domain=coderbyte.com&inApp53=false&messagesUtk=411ede850c3d4d8886d6239095e989ba&url=https%3A%2F%2Fcoderbyte.com%2Fdashboard%2Fbiourja-efzrr%23settings-plan_and_billing&inline=false&isFullscreen=false&globalCookieOptOut=null&isFirstVisitorSession=false&isAttachmentDisabled=false&enableWidgetCookieBanner=false&isInCMS=false&hubspotUtk=cb699e9312d852c242bc02253ccc13cd, line 157: ReferenceError: newrelic is not defined
+JavaScript error: https://app.hubspot.com/conversations-visitor/5988877/threads/utk/411ede850c3d4d8886d6239095e989ba?uuid=1396ced9ff9f4d279b3c337cfecf267d&mobile=false&mobileSafari=false&hideWelcomeMessage=false&hstc=112823387.cb699e9312d852c242bc02253ccc13cd.1647403220738.1647403220738.1647403220738.1&domain=coderbyte.com&inApp53=false&messagesUtk=411ede850c3d4d8886d6239095e989ba&url=https%3A%2F%2Fcoderbyte.com%2Fdashboard%2Fbiourja-efzrr%23settings-plan_and_billing&inline=false&isFullscreen=false&globalCookieOptOut=null&isFirstVisitorSession=false&isAttachmentDisabled=false&enableWidgetCookieBanner=false&isInCMS=false&hubspotUtk=cb699e9312d852c242bc02253ccc13cd, line 186: TypeError: hubspot.require is not a function
+JavaScript error: https://app.hubspot.com/conversations-visitor/5988877/threads/utk/411ede850c3d4d8886d6239095e989ba?uuid=1396ced9ff9f4d279b3c337cfecf267d&mobile=false&mobileSafari=false&hideWelcomeMessage=false&hstc=112823387.cb699e9312d852c242bc02253ccc13cd.1647403220738.1647403220738.1647403220738.1&domain=coderbyte.com&inApp53=false&messagesUtk=411ede850c3d4d8886d6239095e989ba&url=https%3A%2F%2Fcoderbyte.com%2Fdashboard%2Fbiourja-efzrr%23settings-plan_and_billing&inline=false&isFullscreen=false&globalCookieOptOut=null&isFirstVisitorSession=false&isAttachmentDisabled=false&enableWidgetCookieBanner=false&isInCMS=false&hubspotUtk=cb699e9312d852c242bc02253ccc13cd, line 191: TypeError: hubspot.require is not a function
+1647403416843	Marionette	INFO	Stopped listening on port 52079
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PSessionStorageObserver::Msg_Observe) Channel closing: too late to send/recv, messages will be lost
+
