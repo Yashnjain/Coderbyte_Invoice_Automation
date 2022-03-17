@@ -563,3 +563,42 @@ JavaScript error: https://app.hubspot.com/conversations-visitor/5988877/threads/
 
 ###!!! [Child][PContentChild] Error: RunMessage(msgname=PSessionStorageObserver::Msg_Observe) Channel closing: too late to send/recv, messages will be lost
 
+1647489608524	geckodriver	INFO	Listening on 127.0.0.1:59096
+1647489611548	mozrunner::runner	INFO	Running command: "C:\\\\Program Files\\\\Mozilla Firefox\\\\Firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\TEMP\\AppData\\Local\\Temp\\rust_mozprofileS1m4TC"
+1647489612230	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\TEMP\\AppData\\Local\\Temp\\rust_mozprofileS1m4TC\\search.json.mozlz4", (void 0)))
+1647489613934	Marionette	INFO	Listening on port 59107
+1647489614395	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://s3.amazonaws.com/coderbytejs/jquery-1.3.2.min.js, line 19: unreachable code after return statement
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://coderbyte.com"
+JavaScript warning: https://s3.amazonaws.com/coderbytejs/jquery-1.3.2.min.js, line 19: unreachable code after return statement
+JavaScript warning: https://s3.amazonaws.com/coderbytejs/jquery-1.3.2.min.js, line 19: unreachable code after return statement
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Msg_NotifyProcessPriorityChanged) Channel closing: too late to send/recv, messages will be lost
+
+1647489816043	Marionette	INFO	Stopped listening on port 59107
+1647510445755	geckodriver	INFO	Listening on 127.0.0.1:50154
+1647510448819	mozrunner::runner	INFO	Running command: "C:\\\\Program Files\\\\Mozilla Firefox\\\\Firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\TEMP\\AppData\\Local\\Temp\\rust_mozprofilemGTBzD"
+1647510449478	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\TEMP\\AppData\\Local\\Temp\\rust_mozprofilemGTBzD\\search.json.mozlz4", (void 0)))
+1647510451006	Marionette	INFO	Listening on port 50162
+1647510451094	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://s3.amazonaws.com/coderbytejs/jquery-1.3.2.min.js, line 19: unreachable code after return statement
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://coderbyte.com"
+JavaScript warning: https://s3.amazonaws.com/coderbytejs/jquery-1.3.2.min.js, line 19: unreachable code after return statement
+JavaScript warning: https://s3.amazonaws.com/coderbytejs/jquery-1.3.2.min.js, line 19: unreachable code after return statement
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Msg_DiscardWindowContext) Channel closing: too late to send/recv, messages will be lost
+
+JavaScript error: https://app.hubspot.com/conversations-visitor/5988877/threads/utk/0f3d5c7e58b54c7aa0f25b4debb75714?uuid=66a7d099164d4a59b31df212ec6c2427&mobile=false&mobileSafari=false&hideWelcomeMessage=false&hstc=112823387.2685cbf20ecea70352e5f2986518afb0.1647510456542.1647510456542.1647510456542.1&domain=coderbyte.com&inApp53=false&messagesUtk=0f3d5c7e58b54c7aa0f25b4debb75714&url=https%3A%2F%2Fcoderbyte.com%2Fdashboard%2Fbiourja-efzrr%23settings-plan_and_billing&inline=false&isFullscreen=false&globalCookieOptOut=null&isFirstVisitorSession=false&isAttachmentDisabled=false&enableWidgetCookieBanner=false&isInCMS=false&hubspotUtk=2685cbf20ecea70352e5f2986518afb0, line 143: ReferenceError: hns is not defined
+JavaScript error: https://app.hubspot.com/conversations-visitor/5988877/threads/utk/0f3d5c7e58b54c7aa0f25b4debb75714?uuid=66a7d099164d4a59b31df212ec6c2427&mobile=false&mobileSafari=false&hideWelcomeMessage=false&hstc=112823387.2685cbf20ecea70352e5f2986518afb0.1647510456542.1647510456542.1647510456542.1&domain=coderbyte.com&inApp53=false&messagesUtk=0f3d5c7e58b54c7aa0f25b4debb75714&url=https%3A%2F%2Fcoderbyte.com%2Fdashboard%2Fbiourja-efzrr%23settings-plan_and_billing&inline=false&isFullscreen=false&globalCookieOptOut=null&isFirstVisitorSession=false&isAttachmentDisabled=false&enableWidgetCookieBanner=false&isInCMS=false&hubspotUtk=2685cbf20ecea70352e5f2986518afb0, line 157: ReferenceError: newrelic is not defined
+JavaScript error: https://app.hubspot.com/conversations-visitor/5988877/threads/utk/0f3d5c7e58b54c7aa0f25b4debb75714?uuid=66a7d099164d4a59b31df212ec6c2427&mobile=false&mobileSafari=false&hideWelcomeMessage=false&hstc=112823387.2685cbf20ecea70352e5f2986518afb0.1647510456542.1647510456542.1647510456542.1&domain=coderbyte.com&inApp53=false&messagesUtk=0f3d5c7e58b54c7aa0f25b4debb75714&url=https%3A%2F%2Fcoderbyte.com%2Fdashboard%2Fbiourja-efzrr%23settings-plan_and_billing&inline=false&isFullscreen=false&globalCookieOptOut=null&isFirstVisitorSession=false&isAttachmentDisabled=false&enableWidgetCookieBanner=false&isInCMS=false&hubspotUtk=2685cbf20ecea70352e5f2986518afb0, line 186: TypeError: hubspot.require is not a function
+JavaScript error: https://app.hubspot.com/conversations-visitor/5988877/threads/utk/0f3d5c7e58b54c7aa0f25b4debb75714?uuid=66a7d099164d4a59b31df212ec6c2427&mobile=false&mobileSafari=false&hideWelcomeMessage=false&hstc=112823387.2685cbf20ecea70352e5f2986518afb0.1647510456542.1647510456542.1647510456542.1&domain=coderbyte.com&inApp53=false&messagesUtk=0f3d5c7e58b54c7aa0f25b4debb75714&url=https%3A%2F%2Fcoderbyte.com%2Fdashboard%2Fbiourja-efzrr%23settings-plan_and_billing&inline=false&isFullscreen=false&globalCookieOptOut=null&isFirstVisitorSession=false&isAttachmentDisabled=false&enableWidgetCookieBanner=false&isInCMS=false&hubspotUtk=2685cbf20ecea70352e5f2986518afb0, line 191: TypeError: hubspot.require is not a function
+1647510495897	Marionette	INFO	Stopped listening on port 50162
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Msg_DestroyBrowsingContextGroup) Channel closing: too late to send/recv, messages will be lost
+
+[Parent 17616, IPC I/O Parent] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:565

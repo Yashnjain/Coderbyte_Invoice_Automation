@@ -76,7 +76,7 @@ sp_password =  credential_dict['PASSWORD'].split(';')[1]
 share_point_path = credential_dict['API_KEY']
 receiver_email = credential_dict['EMAIL_LIST']
 # receiver_email = 'praveen.patel@biourja.com'
-# receiver_email2 = 'imam.khan@biourja.com'
+# receiver_email2= 'imam.khan@biourja.com'
 
 
 job_name = 'CODER_BYTE_INVOICE_AUTOMATION'
@@ -205,16 +205,17 @@ def main():
         try:
             logging.info('Open plan and billing tab')
             driver.get('https://coderbyte.com/dashboard/biourja-efzrr#settings-plan_and_billing')
-            time.sleep(2)
+            time.sleep(5)
             driver.refresh()
-            WebDriverWait(driver,90).until(EC.element_to_be_clickable((By.XPATH,'/html/body/div[1]/section[8]/div/div[3]/div[2]/div/ul/li[2]/div[1]/a/span')))
+            time.sleep(5)
+            WebDriverWait(driver,200,poll_frequency=2).until(EC.element_to_be_clickable((By.XPATH,'/html/body/div[1]/section[8]/div/div[3]/div[2]/div/ul/li[2]/div[1]/a/span')))
             
         except:
             try:
                 # driver.refresh()
                 driver.get('https://coderbyte.com/dashboard/biourja-efzrr#settings-plan_and_billing')
-                WebDriverWait(driver,90).until(EC.element_to_be_clickable((By.XPATH,'/html/body/div[1]/section[8]/div/div[3]/div[2]/div/ul/li[2]/div[1]/a/span')))
-                time.sleep(120)
+                WebDriverWait(driver,200,poll_frequency=2).until(EC.element_to_be_clickable((By.XPATH,'/html/body/div[1]/section[8]/div/div[3]/div[2]/div/ul/li[2]/div[1]/a/span')))
+                # time.sleep(120)
             except Exception as e:
                 raise e
 
