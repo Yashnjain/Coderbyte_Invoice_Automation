@@ -1,11 +1,6 @@
-from cmath import log
 import logging
-from socket import timeout
-from turtle import down
-from matplotlib.backend_bases import LocationEvent
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-from webdriver_manager.firefox import GeckoDriverManager
 from selenium.webdriver.firefox.firefox_binary import FirefoxBinary
 import time,os,glob,logging,datetime,sys
 from selenium.webdriver.firefox.options import Options
@@ -27,9 +22,6 @@ month = mydate.strftime("%b")
 year = datetime.date.today().year
 base_path = os.getcwd() + '\\'+'temp'
 options = Options()
-# Credentials --
-# USER = "pooja.upadhyay@biourja.com"
-# PASSWORD = "Indore@123"
 executable_path = os.getcwd()+"\\geckodriver_v0.30.exe"
 # logging 
 today_date=date.today()
@@ -222,7 +214,7 @@ def main():
             driver.find_element(By.XPATH,'/html/body/div[1]/section[8]/div/div[3]/div[2]/div/ul/li[2]/div[1]/a/span').click()  #latest invoice
         else:
             logging.info("Sending mail for JOB FAILED")
-            bu_alerts.send_mail(receiver_email = receiver_email,mail_subject ='JOB FAILED - {}'.format(job_name),mail_body = 'No new invoice found for {}'.format(month),attachment_location = logfile)
+            bu_alerts.send_mail(receiver_email = receiver_email,mail_subject =f'JOB SUCCESS - {job_name} No new invoice found for {month}' ,mail_body = f'No new invoice found for {month}',attachment_location = logfile)
             sys.exit() 
             
         driver.switch_to.window(driver.window_handles[-1])

@@ -563,3 +563,60 @@ JavaScript error: https://app.hubspot.com/conversations-visitor/5988877/threads/
 
 ###!!! [Child][PContentChild] Error: RunMessage(msgname=PSessionStorageObserver::Msg_Observe) Channel closing: too late to send/recv, messages will be lost
 
+1649425040490	geckodriver	INFO	Listening on 127.0.0.1:50673
+1649425043620	mozrunner::runner	INFO	Running command: "C:\\\\Program Files\\\\Mozilla Firefox\\\\Firefox.exe" "--marionette" "--remote-debugging-port" "50674" "-no-remote" "-profile" "C:\\Users\\YASHN~1.JAI\\AppData\\Local\\Temp\\rust_mozprofilePiTDOt"
+1649425044475	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\YASHN~1.JAI\\AppData\\Local\\Temp\\rust_mozprofilePiTDOt\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:50674/devtools/browser/cb5f1677-fdbc-45c7-981e-81185da94a6f
+1649425047565	Marionette	INFO	Listening on port 50679
+1649425047832	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1649425097410	geckodriver	INFO	Listening on 127.0.0.1:50860
+1649425100549	mozrunner::runner	INFO	Running command: "C:\\\\Program Files\\\\Mozilla Firefox\\\\Firefox.exe" "--marionette" "--remote-debugging-port" "50861" "-no-remote" "-profile" "C:\\Users\\YASHN~1.JAI\\AppData\\Local\\Temp\\rust_mozprofileQ5ev3x"
+1649425101059	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\YASHN~1.JAI\\AppData\\Local\\Temp\\rust_mozprofileQ5ev3x\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:50861/devtools/browser/65c5bbf2-77cf-4c39-af88-ee86b7415267
+1649425103156	Marionette	INFO	Listening on port 50867
+1649425103231	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://s3.amazonaws.com/coderbytejs/jquery-1.3.2.min.js, line 19: unreachable code after return statement
+JavaScript warning: https://s3.amazonaws.com/coderbytejs/jquery-1.3.2.min.js, line 19: unreachable code after return statement
+1649425184592	geckodriver	INFO	Listening on 127.0.0.1:51137
+1649425187700	mozrunner::runner	INFO	Running command: "C:\\\\Program Files\\\\Mozilla Firefox\\\\Firefox.exe" "--marionette" "--remote-debugging-port" "51138" "-no-remote" "-profile" "C:\\Users\\YASHN~1.JAI\\AppData\\Local\\Temp\\rust_mozprofileA5knG8"
+1649425188183	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\YASHN~1.JAI\\AppData\\Local\\Temp\\rust_mozprofileA5knG8\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:51138/devtools/browser/decc1f0c-fdcf-407e-a4c8-f5104cebb284
+1649425190296	Marionette	INFO	Listening on port 51144
+1649425190360	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://s3.amazonaws.com/coderbytejs/jquery-1.3.2.min.js, line 19: unreachable code after return statement
+1649425449793	geckodriver	INFO	Listening on 127.0.0.1:51386
+1649425452920	mozrunner::runner	INFO	Running command: "C:\\\\Program Files\\\\Mozilla Firefox\\\\Firefox.exe" "--marionette" "--remote-debugging-port" "51387" "-no-remote" "-profile" "C:\\Users\\YASHN~1.JAI\\AppData\\Local\\Temp\\rust_mozprofiletFoy56"
+1649425453287	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\YASHN~1.JAI\\AppData\\Local\\Temp\\rust_mozprofiletFoy56\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:51387/devtools/browser/93121dce-3165-44d3-a5d1-88cc54fb4569
+1649425455210	Marionette	INFO	Listening on port 51396
+1649425455607	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://s3.amazonaws.com/coderbytejs/jquery-1.3.2.min.js, line 19: unreachable code after return statement
+1649662915403	geckodriver	INFO	Listening on 127.0.0.1:52248
+1649662918563	mozrunner::runner	INFO	Running command: "C:\\\\Program Files\\\\Mozilla Firefox\\\\Firefox.exe" "--marionette" "--remote-debugging-port" "52249" "-no-remote" "-profile" "C:\\Users\\YASHN~1.JAI\\AppData\\Local\\Temp\\rust_mozprofileMZlwfo"
+1649662920754	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\YASHN~1.JAI\\AppData\\Local\\Temp\\rust_mozprofileMZlwfo\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:52249/devtools/browser/8feb8598-9304-49ec-80d4-2695dc10bc06
+1649662925994	Marionette	INFO	Listening on port 52256
+1649662926085	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1649662936812	Marionette	INFO	Stopped listening on port 52256
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+1649663034701	geckodriver	INFO	Listening on 127.0.0.1:57504
+1649663037934	mozrunner::runner	INFO	Running command: "C:\\\\Program Files\\\\Mozilla Firefox\\\\Firefox.exe" "--marionette" "--remote-debugging-port" "57505" "-no-remote" "-profile" "C:\\Users\\YASHN~1.JAI\\AppData\\Local\\Temp\\rust_mozprofilehtXg1S"
+1649663039500	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\YASHN~1.JAI\\AppData\\Local\\Temp\\rust_mozprofilehtXg1S\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:57505/devtools/browser/0121aabe-d0bb-4e8f-bc27-9f4751cda07f
+1649663044098	Marionette	INFO	Listening on port 57512
+1649663044351	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://s3.amazonaws.com/coderbytejs/jquery-1.3.2.min.js, line 19: unreachable code after return statement
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://coderbyte.com"
+JavaScript warning: https://s3.amazonaws.com/coderbytejs/jquery-1.3.2.min.js, line 19: unreachable code after return statement
+JavaScript warning: https://s3.amazonaws.com/coderbytejs/jquery-1.3.2.min.js, line 19: unreachable code after return statement
+1649664038796	Marionette	INFO	Stopped listening on port 57512
+[Parent 9096, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:725
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
