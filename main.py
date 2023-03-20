@@ -1,8 +1,8 @@
-from cmath import log
+# from cmath import log
 import logging
-from socket import timeout
-from turtle import down
-from matplotlib.backend_bases import LocationEvent
+# from socket import timeout
+# from turtle import down
+# from matplotlib.backend_bases import LocationEvent
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from webdriver_manager.firefox import GeckoDriverManager
@@ -56,13 +56,15 @@ profile.set_preference("browser.download.folderList", 2)
 profile.set_preference('pdfjs.disabled',True)
 # profile.set_preference("browser.helperApps.neverAsk.openFile",",".join(mime_types))
 profile.set_preference("security.default_personal_cert", "Select Automatically")
-profile.set_preference("security.tls.version.min", 1)
+# profile.set_preference("security.tls.version.min", 1)
 profile.accept_untrusted_certs = True
 
-binary = FirefoxBinary(r"C:\\Program Files\\Mozilla Firefox\\Firefox.exe")
+# binary = FirefoxBinary(r"C:\\Program Files\\Mozilla Firefox\\Firefox.exe")
 # binary = FirefoxBinary(r"C:\\Users\\chetan.surwade\\AppData\\Local\\Mozilla Firefox\\firefox.exe")
-driver = webdriver.Firefox(firefox_binary=binary, firefox_profile=profile,
-                            options=options, executable_path=executable_path)
+# driver = webdriver.Firefox(firefox_binary=binary, firefox_profile=profile,
+#                             options=options, executable_path=executable_path)
+driver = webdriver.Firefox(firefox_profile=profile,
+                                        options=options, executable_path=executable_path)
 
 # driver = webdriver.Firefox(executable_path=GeckoDriverManager().install(),firefox_profile=profile)
 # driver = webdriver.Firefox(executable_path=executable_path,firefox_profile=profile, options=Options)
@@ -101,7 +103,7 @@ def send_mail(receiver_email: str, mail_subject: str, mail_body: str, attachment
         logging.info("GIVING CREDENTIALS FOR SENDING MAIL")
         if not sender_email or sender_password:
             sender_email = "biourjapowerdata@biourja.com"
-            sender_password = r"bY3mLSQ-\Q!9QmXJ"
+            sender_password = r"Texas08642"
             # sender_email = r"virtual-out@biourja.com"
             # sender_password = "t?%;`p39&Pv[L<6Y^cz$z2bn"
         receivers = receiver_email.split(",")
@@ -125,7 +127,7 @@ def send_mail(receiver_email: str, mail_subject: str, mail_body: str, attachment
                 msg.attach(p)  # attach the instance 'p' to instance 'msg'
 
         # s = smtplib.SMTP('smtp.gmail.com', 587) # creates SMTP session
-        s = smtplib.SMTP('us-smtp-outbound-1.mimecast.com',
+        s = smtplib.SMTP('smtp.office365.com',
                          587)  # creates SMTP session
         s.starttls()  # start TLS for security
         s.login(sender_email, sender_password)  # Authentication
@@ -196,10 +198,12 @@ def main():
         driver.get('https://coderbyte.com/sl-org')         #login url
         logging.info('pass user name')
         driver.find_element(By.XPATH,'//*[@id="app"]/div[2]/div/div/div[1]/div[1]/div[1]/div/input').send_keys(username)
+        logging.info('clicking on next button')
+        driver.find_element(By.CSS_SELECTOR,'.btn.btn-gradient.employer.nextButton').click()
         logging.info('pass password')
         driver.find_element(By.XPATH,'//*[@id="app"]/div[2]/div/div/div[1]/div[1]/div[2]/div/input').send_keys(password)
         logging.info('click on Login Button')
-        driver.find_element(By.XPATH,'//*[@id="app"]/div[2]/div/div/div[1]/div[2]/button').click() # login button
+        driver.find_element(By.CSS_SELECTOR,"button[class='btn btn-gradient employer']").click() # login button
         time.sleep(8)
         
         try:
@@ -208,29 +212,29 @@ def main():
             time.sleep(5)
             driver.refresh()
             time.sleep(5)
-            WebDriverWait(driver,200,poll_frequency=2).until(EC.element_to_be_clickable((By.XPATH,'/html/body/div[1]/section[8]/div/div[3]/div[2]/div/ul/li[2]/div[1]/a/span')))
+            # WebDriverWait(driver,200,poll_frequency=2).until(EC.element_to_be_clickable((By.XPATH,'/html/body/div[1]/section[6]/div/div[3]/div[2]/div/ul/li[2]/div[1]/a/span')))
             
         except:
             try:
                 # driver.refresh()
                 driver.get('https://coderbyte.com/dashboard/biourja-efzrr#settings-plan_and_billing')
-                WebDriverWait(driver,200,poll_frequency=2).until(EC.element_to_be_clickable((By.XPATH,'/html/body/div[1]/section[8]/div/div[3]/div[2]/div/ul/li[2]/div[1]/a/span')))
-                # time.sleep(120)
+                # WebDriverWait(driver,200,poll_frequency=2).until(EC.element_to_be_clickable((By.XPATH,'/html/body/div[1]/section[6]/div/div[3]/div[2]/div/ul/li[2]/div[1]/a/span')))
+                # # time.sleep(120)
             except Exception as e:
                 raise e
 
-        if month == driver.find_element(By.XPATH,'/html/body/div[1]/section[8]/div/div[3]/div[2]/div/ul/li[2]/div[1]/a/span').text.split()[0]:
-            driver.find_element(By.XPATH,'/html/body/div[1]/section[8]/div/div[3]/div[2]/div/ul/li[2]/div[1]/a/span').click()  #latest invoice
+        if month == driver.find_element(By.XPATH,'/html[1]/body[1]/div[1]/section[7]/div[1]/div[3]/div[1]/div[2]/ul[1]/li[3]/div[1]/span[1]').text.split()[0]:
+            driver.find_element(By.XPATH,'/html[1]/body[1]/div[1]/section[7]/div[1]/div[3]/div[1]/div[2]/ul[1]/li[3]/div[3]/a[1]').click()  #latest invoice
         else:
             logging.info("Sending mail for JOB FAILED")
             bu_alerts.send_mail(receiver_email = receiver_email,mail_subject ='JOB FAILED - {}'.format(job_name),mail_body = 'No new invoice found for {}'.format(month),attachment_location = logfile)
             sys.exit() 
-            
+        time.sleep(1)   
         driver.switch_to.window(driver.window_handles[-1])
-        WebDriverWait(driver,90).until(EC.element_to_be_clickable((By.XPATH,'/html/body/div/div/div[1]/div/div[3]/div[1]/div/div[2]/table/tbody/tr[4]/td/div/button[1]/div/span')))
-        logging.info('Click on download button')
-        driver.find_element_by_xpath('/html/body/div/div/div[1]/div/div[3]/div[1]/div/div[2]/table/tbody/tr[4]/td/div/button[1]/div/span').click()  #download invoice
-        # time.sleep(10)
+        # WebDriverWait(driver,90).until(EC.element_to_be_clickable((By.XPATH,'/html/body/div/div/div[1]/div/div[3]/div[1]/div/div[2]/table/tbody/tr[4]/td/div/button[1]/div/span')))
+        # logging.info('Click on download button')
+        # driver.find_element_by_xpath('/html/body/div/div/div[1]/div/div[3]/div[1]/div/div[2]/table/tbody/tr[4]/td/div/button[1]/div/span').click()  #download invoice
+        time.sleep(1)
         logging.info('*****************Download Successfully*************')
         logging.info(f'File is downloaded in {download_wait()} seconds.')
         s = connect_to_sharepoint()
