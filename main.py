@@ -1,6 +1,11 @@
+# from cmath import log
 import logging
+# from socket import timeout
+# from turtle import down
+# from matplotlib.backend_bases import LocationEvent
 from selenium import webdriver
 from selenium.webdriver.common.by import By
+from webdriver_manager.firefox import GeckoDriverManager
 from selenium.webdriver.firefox.firefox_binary import FirefoxBinary
 import time,os,glob,logging,datetime,sys
 from selenium.webdriver.firefox.options import Options
