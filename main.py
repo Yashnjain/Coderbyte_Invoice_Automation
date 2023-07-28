@@ -1,8 +1,4 @@
-# from cmath import log
 import logging
-# from socket import timeout
-# from turtle import down
-# from matplotlib.backend_bases import LocationEvent
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from webdriver_manager.firefox import GeckoDriverManager
@@ -18,7 +14,7 @@ import sharepy
 
 def remove_existing_files():
     #remove existing files from directory
-    dir = os.getcwd() + '\\'+ 'temp'
+    dir = os.getcwd() + '\\'+ 'download'
     filelist = glob.glob(os.path.join(dir, "*"))
     for f in filelist:
         os.remove(f)
@@ -39,10 +35,8 @@ def login_and_download_process():
         profile.accept_untrusted_certs = True
 
         binary = FirefoxBinary(r"C:\\Program Files\\Mozilla Firefox\\Firefox.exe")
-        # binary = FirefoxBinary(r"C:\\Users\\chetan.surwade\\AppData\\Local\\Mozilla Firefox\\firefox.exe")
-        driver = webdriver.Firefox(firefox_binary=binary, firefox_profile=profile,
-                                    options=options, executable_path=executable_path)    
-        driver.get('https://coderbyte.com/sl-org')
+        driver=webdriver.Firefox(executable_path=GeckoDriverManager().install(),firefox_profile=profile)
+        driver.get(login_url)
         time.sleep(5)
         WebDriverWait(driver,90).until(EC.element_to_be_clickable((By.XPATH,'//*[@id="app"]/div[2]/div/div/div[1]/div[1]/div[1]/div/input'))).send_keys(username)
         time.sleep(5)
@@ -55,41 +49,37 @@ def login_and_download_process():
         logging.info('Open plan and billing tab')
         try:
             logging.info('Open plan and billing tab')
-            driver.get(url)
+            driver.get(file_url)
             time.sleep(7)
             driver.refresh()
             time.sleep(5)
         except:
             try:
-                driver.get('https://coderbyte.com/dashboard/biourja-efzrr#settings-plan_and_billing')
+                driver.get(file_url)
                 time.sleep(5)
                 driver.refresh()
                 time.sleep(120)
             except Exception as e:
                 raise e
-        check_file=WebDriverWait(driver,90).until(EC.element_to_be_clickable((By.XPATH,'/html/body/div[1]/section[8]/div/div[3]/div[1]/div[2]/ul')))
-        if check_file.text.split('\n')[1:][2]=='Upcoming invoice':
-            month_file=check_file.text.split('\n')[1:][0].split(' ')[0]
-            mail_subject_line=f'JOB SUCCESS - {job_name}. Upcoming file of {month_file} month still not came.'
-            mail_body_line = f'{job_name} completed successfully, Attached PDF and logs.'
-        else:
-            new_file=WebDriverWait(driver,90).until(EC.element_to_be_clickable((By.XPATH,'/html/body/div[1]/section[8]/div/div[3]/div[1]/div[2]/ul/li[2]/div[3]/a[2]')))
-            new_file.click()   
-            time.sleep(15)
-            driver.switch_to.window(driver.window_handles[-1])
-            WebDriverWait(driver,90).until(EC.element_to_be_clickable((By.XPATH,'/html/body/div/div/div[1]/div/div[3]/div[1]/div/div[2]/table/tbody/tr[4]/td/div/button[1]/div/span'))).click()
+        new_file=WebDriverWait(driver,90).until(EC.element_to_be_clickable((By.XPATH,'/html/body/div[1]/section[8]/div/div[3]/div[1]/div[2]/ul/li[3]/div[1]/span')))    
+        if month==new_file.text.split(' ')[0]:
+            file_to_download=WebDriverWait(driver,120).until(EC.element_to_be_clickable((By.XPATH,'/html/body/div[1]/section[8]/div/div[3]/div[1]/div[2]/ul/li[3]/div[3]/a[1]')))
+            time.sleep(5)
             logging.info('Click on download button')
+            file_to_download.click()
             time.sleep(15)
-            logging.info('*****************Download Successfully*************')
+            logging.info('*****************Download Successfull*************')
+            logging.info('Connecting to Sharepoint')
             s = connect_to_sharepoint()
             file_upload_sp(s)
             logging.info("File is uploaded")
             logging.info("Sending mail for JOB SUCCESS")
-            
-            mail_subject_line=f'JOB SUCCESS - {job_name}. New File of {month_file} month uploaded into Sharepoint.'
-            mail_body_line = f'{job_name} completed successfully, Attached PDF and logs \n {share_point_path}',
+            mail_subject_line=f'JOB SUCCESS - {job_name}. New File of {month} month uploaded into Sharepoint.'
+            mail_body_line = f'{job_name} completed successfully, Attached PDF and logs \n {share_point_path}'
 
-        logging.info("EMail Sent Successfully")
+        else:
+            mail_subject_line=f'JOB SUCCESS - {job_name}. Upcoming file of {month} month still not came.'
+            mail_body_line = f'{job_name} completed successfully, Attached PDF and logs.'
         bu_alerts.send_mail(
             receiver_email = receiver_email,
             mail_subject = mail_subject_line,
@@ -106,29 +96,43 @@ def login_and_download_process():
 
 
 def connect_to_sharepoint():
-    site = 'https://biourja.sharepoint.com'
-    # Connecting to Sharepoint and downloading the file with sync params
-    s = sharepy.connect(site, sp_username, sp_password)
-    return s
+    try:
+        site = 'https://biourja.sharepoint.com'
+        # Connecting to Sharepoint and downloading the file with sync params
+        s = sharepy.connect(site, sp_username, sp_password)
+        return s
+    except Exception as e:
+        logging.info(f"Exception caught in connect_to_sharepoint(): {e}")
+        logging.exception(f'Exception caught in connect_to_sharepoint(): {e}')
+        raise e
+
+
     
         
 # for upload the file on sharepoint
 def file_upload_sp(s):
-    filesToUpload = os.listdir(os.getcwd() + '\\'+ 'temp')
-    for fileToUpload in filesToUpload:
-        z=base_path+"\\"+fileToUpload
-        locations_list.append(z)
-        headers = {"accept": "application/json;odata=verbose",
-        "content-type": "Portable Document Format (PDF)"}
-        with open(os.path.join(os.getcwd() + '\\'+'temp', f"{fileToUpload}"), 'rb') as read_file:
+    try:
+        filesToUpload = os.listdir(os.getcwd() + '\\'+ 'download')
+        for fileToUpload in filesToUpload:
+            z=base_path+"\\"+fileToUpload
+            locations_list.append(z)
+            headers = {"accept": "application/json;odata=verbose",
+            "content-type": "Portable Document Format (PDF)"}
+            with open(os.path.join(os.getcwd() + '\\'+'download', f"{fileToUpload}"), 'rb') as read_file:
 
-            content = read_file.read()
-        #  s.post(site + path1 + path2.format("/add(url='"+file+"',overwrite=true)"), data=content, headers=headers)
-        # site =  'https://biourja.sharepoint.com'
-        # path1 = '/BiourjaPower/_api/web/GetFolderByServerRelativeUrl'
-        p = s.post(f"https://biourja.sharepoint.com/BiourjaPower/_api/web/GetFolderByServerRelativeUrl('Shared%20Documents/Power%20Reference/Power_Invoices/Coderbyte/')/Files/add(url='Coderbyte-{month} {year} Invoice.pdf',overwrite=true)",data=content,headers=headers)
-        # p = s.post(f"{site}{path1}('Shared{share_point_path}')/Files/add(url='Coderbyte-{month} {year} Invoice.pdf',overwrite=true)",data=content,headers=headers)
-    return p
+                content = read_file.read()
+            #  s.post(site + path1 + path2.format("/add(url='"+file+"',overwrite=true)"), data=content, headers=headers)
+            # site =  'https://biourja.sharepoint.com'
+            # path1 = '/BiourjaPower/_api/web/GetFolderByServerRelativeUrl'
+            p = s.post(f"https://biourja.sharepoint.com/BiourjaPower/_api/web/GetFolderByServerRelativeUrl('Shared%20Documents/Power%20Reference\
+                    /Power_Invoices/Coderbyte/')/Files/add(url='Coderbyte-{month} {year} Invoice.pdf',overwrite=true)",data=content,headers=headers)
+            # p = s.post(f"{site}{path1}('Shared{share_point_path}')/Files/add(url='Coderbyte-{month} {year} Invoice.pdf',overwrite=true)",data=content,headers=headers)
+        return p
+    except Exception as e:
+        logging.info(f"Exception caught in file_upload_sp(): {e}")
+        logging.exception(f'Exception caught in file_upload_sp(): {e}')
+        raise e
+    
         
 def main():
     try:
@@ -146,9 +150,7 @@ if __name__=="__main__" :
         mydate = datetime.datetime.now()
         month = mydate.strftime("%b")
         year = datetime.date.today().year
-        base_path = os.getcwd() + '\\'+'temp'
         options = Options()
-        executable_path = os.getcwd()+"\\geckodriver_v0.30.exe"
         # logging 
         today_date=date.today()
         for handler in logging.root.handlers[:]:
@@ -176,9 +178,26 @@ if __name__=="__main__" :
         sp_username = credential_dict['USERNAME'].split(';')[1]
         sp_password =  credential_dict['PASSWORD'].split(';')[1]
         share_point_path = credential_dict['API_KEY']
-        #receiver_email='enoch.benjamin@biourja.com'
-        receiver_email = credential_dict['EMAIL_LIST']
-        url=credential_dict['SOURCE_URL']
+        receiver_email='enoch.benjamin@biourja.com'
+        #receiver_email = credential_dict['EMAIL_LIST']
+        login_url=credential_dict['SOURCE_URL'].split(';')[1]
+        file_url=credential_dict['SOURCE_URL'].split(';')[2]
+
+        directories_created=["download","logs"]
+        for directory in directories_created:
+            path3 = os.path.join(os.getcwd(),directory)  
+            try:
+                os.makedirs(path3, exist_ok = True)
+                print("Directory '%s' created successfully" % directory)
+            except OSError as error:
+                print("Directory '%s' can not be created" % directory)
+        files_location=os.getcwd() + "\\download"
+        
+        logging.info('setting paTH TO DOWNLOAD')
+
+        base_path = os.getcwd() + '\\'+'download'
+
+        
         main()
         time_end = time.time()
         logging.info(f"It takes {time_end-time_start} seconds to run")
