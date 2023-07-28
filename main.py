@@ -97,9 +97,8 @@ def login_and_download_process():
 
 def connect_to_sharepoint():
     try:
-        site = 'https://biourja.sharepoint.com'
         # Connecting to Sharepoint and downloading the file with sync params
-        s = sharepy.connect(site, sp_username, sp_password)
+        s = sharepy.connect(sharepoint_site, sp_username, sp_password)
         return s
     except Exception as e:
         logging.info(f"Exception caught in connect_to_sharepoint(): {e}")
@@ -121,12 +120,10 @@ def file_upload_sp(s):
             with open(os.path.join(os.getcwd() + '\\'+'download', f"{fileToUpload}"), 'rb') as read_file:
 
                 content = read_file.read()
-            #  s.post(site + path1 + path2.format("/add(url='"+file+"',overwrite=true)"), data=content, headers=headers)
-            # site =  'https://biourja.sharepoint.com'
-            # path1 = '/BiourjaPower/_api/web/GetFolderByServerRelativeUrl'
-            p = s.post(f"https://biourja.sharepoint.com/BiourjaPower/_api/web/GetFolderByServerRelativeUrl('Shared%20Documents/Power%20Reference\
-                    /Power_Invoices/Coderbyte/')/Files/add(url='Coderbyte-{month} {year} Invoice.pdf',overwrite=true)",data=content,headers=headers)
-            # p = s.post(f"{site}{path1}('Shared{share_point_path}')/Files/add(url='Coderbyte-{month} {year} Invoice.pdf',overwrite=true)",data=content,headers=headers)
+            # p = s.post(f"https://biourja.sharepoint.com/BiourjaPower/_api/web/GetFolderByServerRelativeUrl('Shared%20Documents/Power%20Reference\
+            #         /Power_Invoices/Coderbyte/')/Files/add(url='Coderbyte-{month} {year} Invoice.pdf',overwrite=true)",data=content,headers=headers)
+            
+            p = s.post(f"{sharepoint_site}{sharepoint_path_1}('{sharepoint_path_2}')/Files/add(url='Coderbyte-{month} {year} Invoice.pdf',overwrite=true)",data=content,headers=headers)
         return p
     except Exception as e:
         logging.info(f"Exception caught in file_upload_sp(): {e}")
@@ -177,11 +174,16 @@ if __name__=="__main__" :
         password = credential_dict['PASSWORD'].split(';')[0]
         sp_username = credential_dict['USERNAME'].split(';')[1]
         sp_password =  credential_dict['PASSWORD'].split(';')[1]
-        share_point_path = credential_dict['API_KEY']
-        receiver_email='enoch.benjamin@biourja.com'
-        #receiver_email = credential_dict['EMAIL_LIST']
-        login_url=credential_dict['SOURCE_URL'].split(';')[1]
-        file_url=credential_dict['SOURCE_URL'].split(';')[2]
+
+
+        sharepoint_site=credential_dict['API_KEY'].split(';')[0]
+        sharepoint_path_1=credential_dict['API_KEY'].split(';')[1]
+        sharepoint_path_2=credential_dict['API_KEY'].split(';')[2]
+        share_point_path=f"{sharepoint_site}/BiourjaPower/{sharepoint_path_2}"
+        # receiver_email='enoch.benjamin@biourja.com'
+        receiver_email = credential_dict['EMAIL_LIST']
+        login_url=credential_dict['SOURCE_URL'].split(';')[0]
+        file_url=credential_dict['SOURCE_URL'].split(';')[1]
 
         directories_created=["download","logs"]
         for directory in directories_created:
@@ -196,7 +198,6 @@ if __name__=="__main__" :
         logging.info('setting paTH TO DOWNLOAD')
 
         base_path = os.getcwd() + '\\'+'download'
-
         
         main()
         time_end = time.time()
