@@ -3460,3 +3460,358 @@ JavaScript warning: https://s3.amazonaws.com/coderbytejs/jquery-1.3.2.min.js, li
 JavaScript error: https://s3.amazonaws.com/coderbytejs/jquery-1.3.2.min.js, line 19: TypeError: document.body is null
 1683282425765	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
 JavaScript warning: https://s3.amazonaws.com/coderbytejs/jquery-1.3.2.min.js, line 19: unreachable code after return statement
+1690789917714	geckodriver	INFO	Listening on 127.0.0.1:59085
+1690789920717	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\vcron\\AppData\\Local\\Temp\\rust_mozprofilerAmow1"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1690789921393	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1690789921538	Marionette	INFO	Listening on port 59095
+Read port: 59095
+1690789921873	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://s3.amazonaws.com/coderbytejs/jquery-1.3.2.min.js, line 19: unreachable code after return statement
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://coderbyte.com."
+JavaScript warning: https://s3.amazonaws.com/coderbytejs/jquery-1.3.2.min.js, line 19: unreachable code after return statement
+JavaScript warning: https://s3.amazonaws.com/coderbytejs/jquery-1.3.2.min.js, line 19: unreachable code after return statement
+1690789997474	Marionette	INFO	Stopped listening on port 59095
+Dynamically enable window occlusion 1
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+1691579886445	geckodriver	INFO	Listening on 127.0.0.1:63759
+1691579889437	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\vcron\\AppData\\Local\\Temp\\rust_mozprofilehT9Z2N"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1691579889864	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1691579889998	Marionette	INFO	Listening on port 63772
+Read port: 63772
+1691579890318	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://s3.amazonaws.com/coderbytejs/jquery-1.3.2.min.js, line 19: unreachable code after return statement
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://coderbyte.com."
+JavaScript warning: https://s3.amazonaws.com/coderbytejs/jquery-1.3.2.min.js, line 19: unreachable code after return statement
+JavaScript warning: https://s3.amazonaws.com/coderbytejs/jquery-1.3.2.min.js, line 19: unreachable code after return statement
+1691579944135	Marionette	INFO	Stopped listening on port 63772
+Dynamically enable window occlusion 1
+1692158419566	geckodriver	INFO	Listening on 127.0.0.1:54309
+1692158422551	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\vcron\\AppData\\Local\\Temp\\rust_mozprofileKuDfnT"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1692158423365	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1692158423485	Marionette	INFO	Listening on port 54322
+Read port: 54322
+1692158423667	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://s3.amazonaws.com/coderbytejs/jquery-1.3.2.min.js, line 19: unreachable code after return statement
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://coderbyte.com."
+JavaScript warning: https://s3.amazonaws.com/coderbytejs/jquery-1.3.2.min.js, line 19: unreachable code after return statement
+JavaScript warning: https://s3.amazonaws.com/coderbytejs/jquery-1.3.2.min.js, line 19: unreachable code after return statement
+1692158480572	Marionette	INFO	Stopped listening on port 54322
+Dynamically enable window occlusion 1
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+1692244820084	geckodriver	INFO	Listening on 127.0.0.1:56379
+1692244823010	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\vcron\\AppData\\Local\\Temp\\rust_mozprofile11WjOm"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1692244823783	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1692244823907	Marionette	INFO	Listening on port 56398
+Read port: 56398
+Read port: 56398
+1692244826166	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://s3.amazonaws.com/coderbytejs/jquery-1.3.2.min.js, line 19: unreachable code after return statement
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://coderbyte.com."
+JavaScript warning: https://s3.amazonaws.com/coderbytejs/jquery-1.3.2.min.js, line 19: unreachable code after return statement
+JavaScript warning: https://s3.amazonaws.com/coderbytejs/jquery-1.3.2.min.js, line 19: unreachable code after return statement
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+1692244902776	Marionette	INFO	Stopped listening on port 56398
+Dynamically enable window occlusion 1
+1692331220978	geckodriver	INFO	Listening on 127.0.0.1:59392
+1692331223837	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\vcron\\AppData\\Local\\Temp\\rust_mozprofile0wB1vh"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1692331224502	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1692331224640	Marionette	INFO	Listening on port 59486
+Read port: 59486
+Read port: 59486
+1692331226440	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://s3.amazonaws.com/coderbytejs/jquery-1.3.2.min.js, line 19: unreachable code after return statement
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://coderbyte.com."
+JavaScript warning: https://s3.amazonaws.com/coderbytejs/jquery-1.3.2.min.js, line 19: unreachable code after return statement
+JavaScript warning: https://s3.amazonaws.com/coderbytejs/jquery-1.3.2.min.js, line 19: unreachable code after return statement
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+1692331305537	Marionette	INFO	Stopped listening on port 59486
+Dynamically enable window occlusion 1
+1694836821600	geckodriver	INFO	Listening on 127.0.0.1:51552
+1694836824618	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\vcron\\AppData\\Local\\Temp\\rust_mozprofileo9TKjP"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1694836825157	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1694836825272	Marionette	INFO	Listening on port 51580
+Read port: 51580
+1694836825442	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://s3.amazonaws.com/coderbytejs/jquery-1.3.2.min.js, line 19: unreachable code after return statement
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://coderbyte.com."
+JavaScript warning: https://s3.amazonaws.com/coderbytejs/jquery-1.3.2.min.js, line 19: unreachable code after return statement
+JavaScript warning: https://s3.amazonaws.com/coderbytejs/jquery-1.3.2.min.js, line 19: unreachable code after return statement
+1694836879884	Marionette	INFO	Stopped listening on port 51580
+JavaScript warning: https://coderbyte.com/dashboard/biourja-efzrr#settings-plan_and_billing, line 153: Script terminated by timeout at:
+m@https://coderbyte.com/dashboard/biourja-efzrr#settings-plan_and_billing:153:33444
+
+Dynamically enable window occlusion 1
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+1694923221137	geckodriver	INFO	Listening on 127.0.0.1:58420
+1694923224150	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\vcron\\AppData\\Local\\Temp\\rust_mozprofileBRXAew"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1694923224849	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1694923224969	Marionette	INFO	Listening on port 58438
+Read port: 58438
+1694923225268	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://s3.amazonaws.com/coderbytejs/jquery-1.3.2.min.js, line 19: unreachable code after return statement
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://coderbyte.com."
+JavaScript warning: https://s3.amazonaws.com/coderbytejs/jquery-1.3.2.min.js, line 19: unreachable code after return statement
+JavaScript warning: https://s3.amazonaws.com/coderbytejs/jquery-1.3.2.min.js, line 19: unreachable code after return statement
+1694923303370	Marionette	INFO	Stopped listening on port 58438
+Dynamically enable window occlusion 1
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+1695009624240	geckodriver	INFO	Listening on 127.0.0.1:65383
+1695009627233	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\vcron\\AppData\\Local\\Temp\\rust_mozprofileHPwRCZ"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695009627712	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1695009627828	Marionette	INFO	Listening on port 65401
+Read port: 65401
+1695009628005	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://s3.amazonaws.com/coderbytejs/jquery-1.3.2.min.js, line 19: unreachable code after return statement
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://coderbyte.com."
+JavaScript warning: https://s3.amazonaws.com/coderbytejs/jquery-1.3.2.min.js, line 19: unreachable code after return statement
+JavaScript warning: https://s3.amazonaws.com/coderbytejs/jquery-1.3.2.min.js, line 19: unreachable code after return statement
+JavaScript warning: https://static.hsappstatic.net/head-dlb/static-1.368/bundle.production.js, line 594: Script terminated by timeout at:
+c@https://static.hsappstatic.net/head-dlb/static-1.368/bundle.production.js:594:98
+deployed@https://static.hsappstatic.net/head-dlb/static-1.368/bundle.production.js:610:24
+p@https://static.hsappstatic.net/hubspot-dlb/static-1.438/bundle.production.js:1:38851
+f/this.flush@https://static.hsappstatic.net/hubspot-dlb/static-1.438/bundle.production.js:1:36684
+stop@https://static.hsappstatic.net/hubspot-dlb/static-1.438/bundle.production.js:1:37285
+f/this.eagerlyFlushQueueOnUnload@https://static.hsappstatic.net/hubspot-dlb/static-1.438/bundle.production.js:1:36799
+o@https://static.hsappstatic.net/head-dlb/static-1.368/bundle.production.js:244:14
+
+1695009704496	Marionette	INFO	Stopped listening on port 65401
+Dynamically enable window occlusion 1
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+1697428824391	geckodriver	INFO	Listening on 127.0.0.1:57822
+1697428827401	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\vcron\\AppData\\Local\\Temp\\rust_mozprofileEfylr8"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1697428828067	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1697428828339	Marionette	INFO	Listening on port 57848
+Read port: 57848
+1697428828858	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://s3.amazonaws.com/coderbytejs/jquery-1.3.2.min.js, line 19: unreachable code after return statement
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://coderbyte.com."
+JavaScript warning: https://s3.amazonaws.com/coderbytejs/jquery-1.3.2.min.js, line 19: unreachable code after return statement
+JavaScript warning: https://s3.amazonaws.com/coderbytejs/jquery-1.3.2.min.js, line 19: unreachable code after return statement
+JavaScript warning: https://static.hsappstatic.net/hubspot-dlb/static-1.438/bundle.production.js, line 1: Script terminated by timeout at:
+u@https://static.hsappstatic.net/hubspot-dlb/static-1.438/bundle.production.js:1:38297
+s@https://static.hsappstatic.net/hubspot-dlb/static-1.438/bundle.production.js:1:38327
+p@https://static.hsappstatic.net/hubspot-dlb/static-1.438/bundle.production.js:1:38946
+f/this.flush@https://static.hsappstatic.net/hubspot-dlb/static-1.438/bundle.production.js:1:36684
+stop@https://static.hsappstatic.net/hubspot-dlb/static-1.438/bundle.production.js:1:37285
+f/this.eagerlyFlushQueueOnUnload@https://static.hsappstatic.net/hubspot-dlb/static-1.438/bundle.production.js:1:36799
+o@https://static.hsappstatic.net/head-dlb/static-1.368/bundle.production.js:244:14
+
+1697428883908	Marionette	INFO	Stopped listening on port 57848
+JavaScript warning: https://coderbyte.com/dashboard/biourja-efzrr#settings-plan_and_billing, line 153: Script terminated by timeout at:
+m@https://coderbyte.com/dashboard/biourja-efzrr#settings-plan_and_billing:153:33444
+
+Dynamically enable window occlusion 1
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+1697515214080	geckodriver	INFO	Listening on 127.0.0.1:58504
+1697515217058	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\vcron\\AppData\\Local\\Temp\\rust_mozprofileMt9f5k"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1697515217920	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1697515218123	Marionette	INFO	Listening on port 58527
+Read port: 58527
+1697515218420	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://s3.amazonaws.com/coderbytejs/jquery-1.3.2.min.js, line 19: unreachable code after return statement
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://coderbyte.com."
+JavaScript warning: https://s3.amazonaws.com/coderbytejs/jquery-1.3.2.min.js, line 19: unreachable code after return statement
+JavaScript warning: https://s3.amazonaws.com/coderbytejs/jquery-1.3.2.min.js, line 19: unreachable code after return statement
+1697515298629	Marionette	INFO	Stopped listening on port 58527
+Dynamically enable window occlusion 1
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+1697601625866	geckodriver	INFO	Listening on 127.0.0.1:61113
+1697601628912	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\vcron\\AppData\\Local\\Temp\\rust_mozprofile2mtg2q"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1697601629698	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1697601629873	Marionette	INFO	Listening on port 61144
+Read port: 61144
+1697601630195	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://s3.amazonaws.com/coderbytejs/jquery-1.3.2.min.js, line 19: unreachable code after return statement
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://coderbyte.com."
+JavaScript warning: https://s3.amazonaws.com/coderbytejs/jquery-1.3.2.min.js, line 19: unreachable code after return statement
+JavaScript warning: https://s3.amazonaws.com/coderbytejs/jquery-1.3.2.min.js, line 19: unreachable code after return statement
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+1697601708961	Marionette	INFO	Stopped listening on port 61144
+Dynamically enable window occlusion 1
+1700110816206	geckodriver	INFO	Listening on 127.0.0.1:58950
+1700110819197	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\vcron\\AppData\\Local\\Temp\\rust_mozprofileP9RQbf"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1700110819740	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1700110819928	Marionette	INFO	Listening on port 58969
+Read port: 58969
+1700110820136	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://s3.amazonaws.com/coderbytejs/jquery-1.3.2.min.js, line 19: unreachable code after return statement
+JavaScript warning: https://snap.licdn.com/li.lms-analytics/insight.beta.min.js, line 1: unreachable code after return statement
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://coderbyte.com."
+JavaScript warning: https://s3.amazonaws.com/coderbytejs/jquery-1.3.2.min.js, line 19: unreachable code after return statement
+JavaScript warning: https://snap.licdn.com/li.lms-analytics/insight.beta.min.js, line 1: unreachable code after return statement
+1700110850128	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+JavaScript warning: https://s3.amazonaws.com/coderbytejs/jquery-1.3.2.min.js, line 19: unreachable code after return statement
+JavaScript warning: https://snap.licdn.com/li.lms-analytics/insight.beta.min.js, line 1: unreachable code after return statement
+1700110874177	Marionette	INFO	Stopped listening on port 58969
+JavaScript warning: https://coderbyte.com/dashboard/biourja-efzrr#settings-plan_and_billing, line 158: Script terminated by timeout at:
+m@https://coderbyte.com/dashboard/biourja-efzrr#settings-plan_and_billing:158:33444
+
+Dynamically enable window occlusion 1
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+1700197222943	geckodriver	INFO	Listening on 127.0.0.1:50319
+1700197225839	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\vcron\\AppData\\Local\\Temp\\rust_mozprofilekSluoP"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1700197226513	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1700197226701	Marionette	INFO	Listening on port 50408
+Read port: 50408
+1700197226952	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://s3.amazonaws.com/coderbytejs/jquery-1.3.2.min.js, line 19: unreachable code after return statement
+JavaScript warning: https://snap.licdn.com/li.lms-analytics/insight.beta.min.js, line 1: unreachable code after return statement
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://coderbyte.com."
+JavaScript warning: https://s3.amazonaws.com/coderbytejs/jquery-1.3.2.min.js, line 19: unreachable code after return statement
+JavaScript warning: https://snap.licdn.com/li.lms-analytics/insight.beta.min.js, line 1: unreachable code after return statement
+1700197256529	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+JavaScript warning: https://s3.amazonaws.com/coderbytejs/jquery-1.3.2.min.js, line 19: unreachable code after return statement
+JavaScript warning: https://js.stripe.com/v3/fingerprinted/js/controller-dcd97706f2ca757d8a60c93d2d89bc46.js, line 1: Script terminated by timeout at:
+i@https://js.stripe.com/v3/fingerprinted/js/controller-dcd97706f2ca757d8a60c93d2d89bc46.js:1:276774
+
+JavaScript warning: https://static.hsappstatic.net/hubspot-dlb/static-1.486/bundle.production.js, line 1: Script terminated by timeout at:
+canFlush@https://static.hsappstatic.net/hubspot-dlb/static-1.486/bundle.production.js:1:41232
+f/this.flush/<@https://static.hsappstatic.net/hubspot-dlb/static-1.486/bundle.production.js:1:36806
+f/this.flush@https://static.hsappstatic.net/hubspot-dlb/static-1.486/bundle.production.js:1:36792
+stop@https://static.hsappstatic.net/hubspot-dlb/static-1.486/bundle.production.js:1:37462
+f/this.eagerlyFlushQueueOnUnload@https://static.hsappstatic.net/hubspot-dlb/static-1.486/bundle.production.js:1:36976
+o@https://static.hsappstatic.net/head-dlb/static-1.368/bundle.production.js:244:14
+
+JavaScript warning: https://snap.licdn.com/li.lms-analytics/insight.beta.min.js, line 1: unreachable code after return statement
+1700197309194	Marionette	INFO	Stopped listening on port 50408
+Dynamically enable window occlusion 1
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+1700283616004	geckodriver	INFO	Listening on 127.0.0.1:53502
+1700283619029	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\vcron\\AppData\\Local\\Temp\\rust_mozprofilewZ09SV"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1700283619754	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1700283619867	Marionette	INFO	Listening on port 53521
+Read port: 53521
+1700283620058	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://s3.amazonaws.com/coderbytejs/jquery-1.3.2.min.js, line 19: unreachable code after return statement
+JavaScript warning: https://snap.licdn.com/li.lms-analytics/insight.beta.min.js, line 1: unreachable code after return statement
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://coderbyte.com."
+JavaScript warning: https://s3.amazonaws.com/coderbytejs/jquery-1.3.2.min.js, line 19: unreachable code after return statement
+1700283649796	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+JavaScript warning: https://snap.licdn.com/li.lms-analytics/insight.beta.min.js, line 1: unreachable code after return statement
+JavaScript warning: https://s3.amazonaws.com/coderbytejs/jquery-1.3.2.min.js, line 19: unreachable code after return statement
+JavaScript warning: https://js.stripe.com/v3/fingerprinted/js/ui-shared-6edd5689e47c8aa5c71d101a3a5167a1.js, line 1: Script terminated by timeout at:
+o@https://js.stripe.com/v3/fingerprinted/js/ui-shared-6edd5689e47c8aa5c71d101a3a5167a1.js:1:219423
+
+JavaScript warning: https://snap.licdn.com/li.lms-analytics/insight.beta.min.js, line 1: unreachable code after return statement
+1700283702088	Marionette	INFO	Stopped listening on port 53521
+Dynamically enable window occlusion 1
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+1702702817830	geckodriver	INFO	Listening on 127.0.0.1:52381
+1702702820807	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\vcron\\AppData\\Local\\Temp\\rust_mozprofileLhsvo2"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1702702821514	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1702702821695	Marionette	INFO	Listening on port 52402
+Read port: 52402
+1702702821941	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://s3.amazonaws.com/coderbytejs/jquery-1.3.2.min.js, line 19: unreachable code after return statement
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://coderbyte.com."
+JavaScript warning: https://s3.amazonaws.com/coderbytejs/jquery-1.3.2.min.js, line 19: unreachable code after return statement
+1702702851522	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+JavaScript warning: https://s3.amazonaws.com/coderbytejs/jquery-1.3.2.min.js, line 19: unreachable code after return statement
+JavaScript warning: https://js.stripe.com/v3/fingerprinted/js/ui-shared-91755eda885e69561a88a7c17d3d897e.js, line 1: Script terminated by timeout at:
+o@https://js.stripe.com/v3/fingerprinted/js/ui-shared-91755eda885e69561a88a7c17d3d897e.js:1:224984
+
+1702702873431	Marionette	INFO	Stopped listening on port 52402
+JavaScript warning: https://coderbyte.com/dashboard/biourja-efzrr#settings-plan_and_billing, line 143: Script terminated by timeout at:
+m@https://coderbyte.com/dashboard/biourja-efzrr#settings-plan_and_billing:143:33444
+
+Dynamically enable window occlusion 1
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+1702789213974	geckodriver	INFO	Listening on 127.0.0.1:56093
+1702789216940	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\vcron\\AppData\\Local\\Temp\\rust_mozprofilejqRJEi"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1702789217617	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1702789217761	Marionette	INFO	Listening on port 56117
+Read port: 56117
+1702789217971	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://s3.amazonaws.com/coderbytejs/jquery-1.3.2.min.js, line 19: unreachable code after return statement
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://coderbyte.com."
+JavaScript warning: https://s3.amazonaws.com/coderbytejs/jquery-1.3.2.min.js, line 19: unreachable code after return statement
+1702789247800	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+JavaScript warning: https://s3.amazonaws.com/coderbytejs/jquery-1.3.2.min.js, line 19: unreachable code after return statement
+JavaScript warning: https://js-agent.newrelic.com/nr-spa-1216.min.js, line 1: Script terminated by timeout at:
+[25]</r.beacon@https://js-agent.newrelic.com/nr-spa-1216.min.js:1:18055
+f@https://js-agent.newrelic.com/nr-spa-1216.min.js:1:9343
+u@https://js-agent.newrelic.com/nr-spa-1216.min.js:1:8915
+l@https://js-agent.newrelic.com/nr-spa-1216.min.js:1:19565
+[21]</r/<@https://js-agent.newrelic.com/nr-spa-1216.min.js:1:15285
+o@https://static.hsappstatic.net/head-dlb/static-1.368/bundle.production.js:244:14
+nrWrapper@https://app.hubspot.com/conversations-visitor/5988877/threads/utk/910182adc91f4b9ba6e5e3409e597a38?uuid=b921ec3635ea44daa5a67482a70873be&mobile=false&mobileSafari=false&hideWelcomeMessage=false&hstc=&domain=coderbyte.com&inApp53=false&messagesUtk=910182adc91f4b9ba6e5e3409e597a38&url=https%3A%2F%2Fcoderbyte.com%2Fdashboard%2Fbiourja-efzrr%23redir_from_homepage&inline=false&isFullscreen=false&globalCookieOptOut=&isFirstVisitorSession=true&isAttachmentDisabled=false&isInitialInputFocusDisabled=false&enableWidgetCookieBanner=false&isInCMS=false:25:29524
+
+1702789292739	Marionette	INFO	Stopped listening on port 56117
+JavaScript warning: https://coderbyte.com/dashboard/biourja-efzrr#settings-plan_and_billing, line 143: Script terminated by timeout at:
+m@https://coderbyte.com/dashboard/biourja-efzrr#settings-plan_and_billing:143:33444
+
+Dynamically enable window occlusion 1
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+1702875614914	geckodriver	INFO	Listening on 127.0.0.1:56407
+1702875617901	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\vcron\\AppData\\Local\\Temp\\rust_mozprofileusAHbz"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1702875618592	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1702875618748	Marionette	INFO	Listening on port 56440
+Read port: 56440
+1702875618957	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://s3.amazonaws.com/coderbytejs/jquery-1.3.2.min.js, line 19: unreachable code after return statement
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://coderbyte.com."
+JavaScript warning: https://s3.amazonaws.com/coderbytejs/jquery-1.3.2.min.js, line 19: unreachable code after return statement
+1702875648736	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+JavaScript warning: https://s3.amazonaws.com/coderbytejs/jquery-1.3.2.min.js, line 19: unreachable code after return statement
+JavaScript warning: https://static.hsappstatic.net/hubspot-dlb/static-1.504/bundle.production.js, line 1: Script terminated by timeout at:
+canFlush@https://static.hsappstatic.net/hubspot-dlb/static-1.504/bundle.production.js:1:39650
+f/this.flush/<@https://static.hsappstatic.net/hubspot-dlb/static-1.504/bundle.production.js:1:36838
+f/this.flush@https://static.hsappstatic.net/hubspot-dlb/static-1.504/bundle.production.js:1:36824
+stop@https://static.hsappstatic.net/hubspot-dlb/static-1.504/bundle.production.js:1:37494
+f/this.eagerlyFlushQueueOnUnload@https://static.hsappstatic.net/hubspot-dlb/static-1.504/bundle.production.js:1:37008
+o@https://static.hsappstatic.net/head-dlb/static-1.368/bundle.production.js:244:14
+
+1702875695176	Marionette	INFO	Stopped listening on port 56440
+Dynamically enable window occlusion 1
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt

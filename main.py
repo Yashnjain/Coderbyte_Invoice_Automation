@@ -213,3 +213,5 @@ if __name__=="__main__" :
             attachment_location = locations_list
         )
         sys.exit(1)
+    finally:
+        print('process completed')         
